@@ -1,2 +1,2 @@
 # Bank-system
-A simple java program which simulates a bank transition
+A simple java program which simulates a bank transition with module
