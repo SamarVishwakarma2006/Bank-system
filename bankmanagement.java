@@ -41,7 +41,13 @@ public class bankmanagement {
     static void deposit(){
         System.out.print("Enter the amount you want to deposit: ");
         newDeposit = scanner.nextDouble();
-        deposit = deposit + newDeposit;
+        if (newDeposit < 0){
+            System.out.println("You cannot enter a negative number!!");
+        }
+        else {
+            deposit = deposit + newDeposit;
+            System.out.println("Deposited $" + newDeposit);
+        }
     }
     static void withdraw(){
         System.out.print("Enter the amount you want to withdraw: ");
